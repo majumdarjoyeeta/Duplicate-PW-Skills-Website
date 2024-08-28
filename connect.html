@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 2px;
+            font-family: Arial, sans-serif;
+        }
+
+        nav div {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        img {
+            margin-right: 15px;
+        }
+
+        input[type="text"]::placeholder {
+            color: #888;
+            font-size: 20px;
+        }
+
+        input[type="text"] {
+            width: 960px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+        .btn {
+            color: white;
+            background-color: rgb(255, 120, 35);
+            margin: 0 rgb(255, 120, 35);
+            height: 50px;
+            width: 250px;
+            border: 0px rgb(255, 120, 35);
+            border-radius: 10px;
+        }
+
+        #ulid {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #ulid li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: light;
+            display: inline-block;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        a:hover {
+            background-color: #f0f0f0;
+        }
+
+        .hr1 {
+            background-color: white;
+            height: 1px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            border: none;
+        }
+
+        .bclass {
+            color: rgb(255, 132, 0);
+        }
+
+        .btn2 { 
+            background-color: rgb(255, 132, 0);
+            border-radius: 10px;
+            height: 30px;
+            width: 100px;
+            color: white;
+            border: none;
+        }
+
+        #btt {
+            color: white;
+            background-color: rgb(255, 120, 35);
+            margin: 0 rgb(255, 120, 35);
+            height: 50px;
+            width: 250px;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+        main {
+            padding: 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .spanclass {
+            color: grey;
+            font-size: 20px;
+        }
+
+        .divimg img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <img src="download.png" alt="loading" height="80px">
+                <input type="text" id="firstName" name="firstName" placeholder="🔍 Search by product title">&nbsp;&nbsp;
+                <button class="btn">Connect with us</button>
+
+            </div>
+            <div>
+                <a href="#">Courses</a>
+                <a href="#">PW Skills Lab</a>
+                <a href="#">Job Portal</a>
+                <a href="#">Experience Portal</a>
+                <a href="#">Become an affiliate</a>
+                <a href="#">Hall Of Fame</a>
+            </div>
+        </nav>
+    </header>
+    <hr class="hr1">
+    <main>
+        <div>
+            <h1>Upscaling Made <b class="bclass"> <marquee direction="left" behavior="alternate">   < Affordable > </marquee></b></h1>
+            <span class="spanclass">
+                PW Skills is your one-stop-shop for upscaling. Get maximum value<br>
+                for time<br>
+                and resources you invest with job-ready courses & high-technology<br>
+                available at the lowest cost.
+            </span><br><br><br>
+            <button id="btt">Explore Courses</button>
+        </div>
+        <div id="divimg">
+            <img src="logo.png" alt="Logo Image" height="500px" width="500px">
+        </div>
+    </main>
+</body>
+</html>
